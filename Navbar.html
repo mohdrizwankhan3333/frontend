@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <style>
+        /* Navbar container */
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 0 20px;
+            border-radius: 5px; /* Optional: Adds rounded corners */
+        }
+
+        /* Links inside navbar */
+        #navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        #navbar a:hover {
+            text-decoration: underline; /* Add hover effect for better UX */
+        }
+
+        /* Search input styling */
+        #navbar input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        /* Search button styling */
+        #navbar button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #navbar button:hover {
+            background-color: darkorange; /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar">
+        <div>
+            <a href="#">Amazon.in</a>
+            <a href="#">Account</a>
+            <a href="#">My Cart</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div>
+            <input type="text" placeholder="Search Amazon.in">
+            <button>Search</button>
+        </div>
+    </div>
+</body>
+</html>

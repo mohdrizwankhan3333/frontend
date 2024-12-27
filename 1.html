@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to Jamia Millia Islamia (Distance Education)</h1>
+</header>
+
+<div class="container">
+    <h2>REGISTRATION</h2>
+
+    <label for="email">Email ID:*</label>
+    <input type="email" id="email" placeholder="Enter your email">
+    <small class="comment-text">Please note that all communication related to your Application including link registration for activation etc. will be sent to this email id.</small>
+
+    <label for="name">Name of Applicant:*</label>
+    <div class="name-boxes">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="middleName" placeholder="Mid Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+    </div>
+    <small class="comment-text">Please Don't add any salutation like Mr./Dr. etc before the Name.</small>
+
+    <label for="dob">Date of Birth:*</label>
+    <div class="dob-boxes">
+        <select id="day">
+            <option value="">Select</option>
+            <!-- Add options for days -->
+        </select>
+        <select id="month">
+            <option value="">Select</option>
+            <!-- Add options for months -->
+        </select>
+        <select id="year">
+            <option value="">Select</option>
+            <!-- Add options for years -->
+        </select>
+    </div>
+
+    <label for="gender">Gender:*</label>
+    <select id="gender">
+        <option value="">Select ..</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="fatherName">Father's Name:*</label>
+    <input type="text" id="fatherName" placeholder="Enter Father's Name">
+    <small class="comment-text">Please Don't add any salutation like Mr./Dr. etc before the Name.</small>
+
+    <label for="motherName">Mother's Name:*</label>
+    <input type="text" id="motherName" placeholder="Enter Mother's Name">
+    <small class="comment-text">Please Don't add any salutation like Ms./Mrs./Dr. etc before the Name.</small>
+
+    <label for="password">Create Password:*</label>
+    <input type="password" id="password" placeholder="Create Password">
+    <small class="comment-text">Your password length should be 8–20. (It must contain at least one letter, one number and one special character).</small>
+
+    <label for="confirmPassword">Confirm Password:*</label>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+    <label for="mobileNo">Mobile No. of the Applicant:*</label>
+    <input type="text" id="mobileNo" placeholder="Enter your Mobile No.">
+
+    <div class="captcha-box">
+        <label for="captcha">Captcha:*</label>
+        <img src="captcha.png" alt="Captcha Image">
+        <a href="#">Not readable? Change text.</a>
+    </div>
+
+    <label for="captchaInput">Enter captcha word here:</label>
+    <input type="text" id="captchaInput" placeholder="Enter Captcha">
+
+    <button class="btn" type="submit">Sign up</button>
+
+    <p>Already Registered? <a href="#">Back to Login</a></p>
+</div>
+</body>
+</html>

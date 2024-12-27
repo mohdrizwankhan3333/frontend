@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include Tailwind CSS from a CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-black">
+    <div>
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus soluta ullam eius. Nisi temporibus perferendis quisquam fugit odio distinctio sit soluta veniam libero eveniet possimus, veritatis quo, voluptatum incidunt exercitationem.
+        Quaerat accusamus facere quam doloremque ducimus porro vitae sapiente blanditiis maxime minima veritatis, fugiat perspiciatis vel laudantium totam temporibus. Atque facere impedit, ipsam quis dolorem temporibus quaerat ex. Magni, neque?</h3>
+    </div>
+    <div>
+        <button id="myButton" class="bg-gray-200 text-black px-4 py-2 rounded" onclick="toggleTheme()">Click ME</button>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            var button = document.getElementById('myButton');
+            var body = document.body;
+
+            // Toggle light and dark theme
+            if (button.classList.contains('bg-gray-200')) {
+                button.classList.remove('bg-gray-200', 'text-black');
+                button.classList.add('bg-black', 'text-white');
+                
+                // Change the body theme
+                body.classList.remove('bg-gray-100', 'text-black');
+                body.classList.add('bg-black', 'text-white');
+            } else {
+                button.classList.remove('bg-black', 'text-white');
+                button.classList.add('bg-gray-200', 'text-black');
+                
+                // Revert the body theme
+                body.classList.remove('bg-black', 'text-white');
+                body.classList.add('bg-gray-100', 'text-black');
+            }
+        }
+    </script>
+</body>
+</html>
